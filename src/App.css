@@ -1,0 +1,143 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #3e3e3e;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.controls .btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.controls .btn:hover {
+  background-color: #45a049;
+}
+
+.language-selector {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.language-selector select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  width: 150px;
+}
+
+.language-selector button {
+  background-color: #2196f3;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.language-selector button:hover {
+  background-color: #1e88e5;
+}
+
+.video-feed {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+canvas {
+  display: none;
+}
+
+.output {
+  margin-top: 20px;
+}
+
+.output strong {
+  display: block;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.output p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.speech-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.speech-controls .btn {
+  background-color: #ff5722;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.speech-controls .btn:hover {
+  background-color: #e64a19;
+}
+
+@media (max-width: 768px) {
+  .controls, .language-selector, .speech-controls {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .controls .btn, .language-selector button, .speech-controls .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
